@@ -22,6 +22,8 @@
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifer];
     
+    
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
