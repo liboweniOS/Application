@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C2DC21AF1B4D48D7001E718E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DC21AE1B4D48D7001E718E /* main.m */; };
-		C2DC21B21B4D48D7001E718E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DC21B11B4D48D7001E718E /* AppDelegate.m */; };
 		C2DC21B41B4D48D7001E718E /* SecretarialLofty-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = C2DC21B31B4D48D7001E718E /* SecretarialLofty-Prefix.pch */; };
 		C2DC21B61B4D48D7001E718E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2DC21B51B4D48D7001E718E /* Images.xcassets */; };
 		C2DC21B91B4D48D7001E718E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2DC21B71B4D48D7001E718E /* LaunchScreen.xib */; };
@@ -49,6 +48,7 @@
 		C2E2A2071B4E15A100B3798B /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E2A2061B4E15A100B3798B /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C2E2A2091B4E161000B3798B /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E2A2081B4E161000B3798B /* libsqlite3.0.dylib */; };
 		C2E2A20B1B4E163D00B3798B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E2A20A1B4E163C00B3798B /* SystemConfiguration.framework */; };
+		C2E2A20E1B4E1CA800B3798B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E2A20D1B4E1CA800B3798B /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +65,6 @@
 		C2DC21A91B4D48D7001E718E /* SecretarialLofty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretarialLofty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DC21AD1B4D48D7001E718E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2DC21AE1B4D48D7001E718E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C2DC21B01B4D48D7001E718E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
-		C2DC21B11B4D48D7001E718E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
 		C2DC21B31B4D48D7001E718E /* SecretarialLofty-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SecretarialLofty-Prefix.pch"; sourceTree = "<group>"; };
 		C2DC21B51B4D48D7001E718E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C2DC21B81B4D48D7001E718E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -146,6 +144,8 @@
 		C2E2A2061B4E15A100B3798B /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
 		C2E2A2081B4E161000B3798B /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		C2E2A20A1B4E163C00B3798B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C2E2A20C1B4E1CA800B3798B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C2E2A20D1B4E1CA800B3798B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,8 +244,8 @@
 		C2DC21CF1B4D4963001E718E /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				C2DC21B01B4D48D7001E718E /* AppDelegate.h */,
-				C2DC21B11B4D48D7001E718E /* AppDelegate.m */,
+				C2E2A20C1B4E1CA800B3798B /* AppDelegate.h */,
+				C2E2A20D1B4E1CA800B3798B /* AppDelegate.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -776,7 +776,6 @@
 			files = (
 				C2E2A2011B4E14D700B3798B /* UIView+WebCacheOperation.m in Sources */,
 				C2E2A1B51B4E13D900B3798B /* CommonTableViewController.m in Sources */,
-				C2DC21B21B4D48D7001E718E /* AppDelegate.m in Sources */,
 				C2E2A1FF1B4E14D700B3798B /* UIImageView+HighlightedWebCache.m in Sources */,
 				C2DC21FA1B4D522E001E718E /* RecommendTableViewController.m in Sources */,
 				C2E2A2071B4E15A100B3798B /* GDataXMLNode.m in Sources */,
@@ -795,6 +794,7 @@
 				C2E2A1FE1B4E14D700B3798B /* UIImage+WebP.m in Sources */,
 				C2E2A1F31B4E14D700B3798B /* NSData+ImageContentType.m in Sources */,
 				C2E2A1F51B4E14D700B3798B /* SDWebImageCompat.m in Sources */,
+				C2E2A20E1B4E1CA800B3798B /* AppDelegate.m in Sources */,
 				C2DC21AF1B4D48D7001E718E /* main.m in Sources */,
 				C2E2A1EC1B4E14D700B3798B /* FMDatabaseAdditions.m in Sources */,
 				C2E2A1F41B4E14D700B3798B /* SDImageCache.m in Sources */,
